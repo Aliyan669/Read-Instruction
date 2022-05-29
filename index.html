@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Instruction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    <div id="container" class="container mt-3 border-4" >
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. quia reprehenderit assumenda exercitationem.</p>
+        <button id="btn1" onclick="bgColors()" type="button" class="btn btn-outline-warning ">Background color change</button>
+        <button id="btn2" onclick="textColors()" type="button" class="btn btn-outline-info">Change Text color</button> 
+    </div>
+    <div id="bulb">
+        <img src="bulbOn.jpg"  onmouseout="imgChange('off' , this)" onmouseover="imgChange('on' , this)" alt="">
+    </div>
+     <div class="civic">
+        <img id="img" width="50%"  height="30%" src="car.jpg" alt="">
+        <br/>
+        <br/>
+        <button type="button"  onclick="imgHandler('show')" class="btn btn-outline-primary">Show Img</button>
+        <button type="button" onclick="imgHandler('hide')" class="btn btn-outline-secondary">Hide Img</button>
+        <button type="button" onclick="imgHandler('small')" class="btn btn-outline-success">Small Img</button>
+        <button type="button" onclick="imgHandler('large')" class="btn btn-outline-danger">Large Img</button>
+     </div>
+</body>
+<script src="app.js"></script>
+</html>
